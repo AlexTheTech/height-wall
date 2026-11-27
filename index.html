@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="A workplace height leaderboard with everyone measured against a human figure, plus animal trivia along the scale.">
+<title>The Height Wall</title>
+<link rel="stylesheet" href="height-wall.css?v=8">
+<noscript><style>#load-status{display:none}</style></noscript>
+</head>
+<body>
+<main>
+  <nav class="nav" aria-label="Page sections">
+    <strong>Workplace heights</strong>
+    <ul>
+      <li><a href="#scale">The scale</a></li>
+      <li><a href="#podium">Top 3</a></li>
+      <li><a href="#leaderboard">Leaderboard</a></li>
+    </ul>
+  </nav>
+
+  <header class="intro">
+    <h1>The Height <span>Wall</span></h1>
+    <p>Eight coworkers, one wall. See where the crew measures up.</p>
+  </header>
+
+  <figure id="scale" aria-labelledby="scale-title">
+    <div class="scale">
+      <div class="figures">
+        <img class="animal-shadow animal-emu" src="emu-shadow.webp" alt="" style="--cm:190">
+        <img class="animal-shadow animal-roo" src="kangaroo-shadow.webp" alt="" style="--cm:150">
+        <img class="animal-shadow animal-penguin" src="penguin-shadow.webp" alt="" style="--cm:115">
+        <img class="scale-person" src="height-reference.webp" width="150" height="300" alt="Upright human figure scaled to the Australian adult average of 168.1 cm" style="--cm:168.1">
+      </div>
+
+      <ol class="marks" aria-label="Crew height marks, tallest first, and the Australian average" role="list">
+        <li class="reading" style="--cm:191.5;--slot:9%;--i:0"><div class="reading-label"><strong>191.5 <small>cm</small></strong><span>Tom</span></div></li>
+        <li class="reading" style="--cm:190.5;--slot:16%;--i:1"><div class="reading-label"><strong>190.5 <small>cm</small></strong><span>Elliot</span></div></li>
+        <li class="reading" style="--cm:189;--slot:23%;--i:2"><div class="reading-label"><strong>189 <small>cm</small></strong><span>Oscar</span></div></li>
+        <li class="reading" style="--cm:186;--slot:30%;--i:3"><div class="reading-label"><strong>186 <small>cm</small></strong><span>Gabriel</span></div></li>
+        <li class="reading" style="--cm:184;--slot:38%;--i:4"><div class="reading-label"><strong>184 <small>cm</small></strong><span>Alex &amp; Christian</span></div></li>
+        <li class="reading" style="--cm:180.5;--slot:47.5%;--i:5"><div class="reading-label"><strong>180.5 <small>cm</small></strong><span>Austin</span></div></li>
+        <li class="reading" style="--cm:177;--slot:55%;--i:6"><div class="reading-label"><strong>177 <small>cm</small></strong><span>Damir</span></div></li>
+        <li class="reading average" style="--cm:168.1;--slot:63.5%;--i:7"><div class="reading-label"><strong>168.1 <small>cm</small></strong><span>Aussie average</span></div></li>
+      </ol>
+
+      <ul class="animal-notes" aria-label="Animal height trivia" role="list">
+        <li class="animal-note emu-note" style="--cm:190;--slot:23%"><p class="animal-label"><strong>190 cm</strong><span>Emus can reach this height. Elliot is just 0.5 cm taller.</span></p></li>
+        <li class="animal-note roo-note" style="--cm:150;--slot:51%"><p class="animal-label"><strong>150 cm</strong><span>Typical for an adult male red kangaroo.</span></p></li>
+        <li class="animal-note penguin-note" style="--cm:115;--slot:72%"><p class="animal-label"><strong>115 cm</strong><span>About as tall as an emperor penguin.</span></p></li>
+      </ul>
+    </div>
+    <figcaption class="scale-caption" id="scale-title">
+      <b>Height from ground level, in centimetres</b>
+      <span>Animal shadows share the same scale as the human figure.</span>
+    </figcaption>
+  </figure>
+
+  <section class="results" id="podium" aria-labelledby="podium-title">
+    <h2 class="section-heading" id="podium-title">Top 3</h2>
+    <ol class="podium" role="list">
+      <li><span class="place">1st</span><span class="name">Tom</span><strong>191.5 <small>cm</small></strong></li>
+      <li><span class="place">2nd</span><span class="name">Elliot</span><strong>190.5 <small>cm</small></strong></li>
+      <li><span class="place">3rd</span><span class="name">Oscar</span><strong>189 <small>cm</small></strong></li>
+    </ol>
+    <p class="spread">Just <strong>1 cm</strong> separates Tom and Elliot. The whole crew spans <strong>14.5 cm</strong>, and even the lowest mark beats the Aussie average by <strong>8.9 cm</strong>.</p>
+  </section>
+
+  <section class="leaderboard" id="leaderboard" aria-labelledby="all-title">
+    <div>
+      <h2 class="section-heading" id="all-title">Everyone on the wall</h2>
+      <table aria-labelledby="all-title">
+        <thead><tr><th scope="col">Rank</th><th scope="col">Name</th><th scope="col">Height</th><th scope="col">vs Aussie avg.</th></tr></thead>
+        <tbody id="team">
+          <tr><td>1</td><th scope="row">Tom</th><td>191.5 cm</td><td>+23.4 cm</td></tr>
+          <tr><td>2</td><th scope="row">Elliot</th><td>190.5 cm</td><td>+22.4 cm</td></tr>
+          <tr><td>3</td><th scope="row">Oscar</th><td>189 cm</td><td>+20.9 cm</td></tr>
+          <tr><td>4</td><th scope="row">Gabriel</th><td>186 cm</td><td>+17.9 cm</td></tr>
+          <tr><td>5</td><th scope="row">Alex</th><td>184 cm</td><td>+15.9 cm</td></tr>
+          <tr><td>5</td><th scope="row">Christian</th><td>184 cm</td><td>+15.9 cm</td></tr>
+          <tr><td>7</td><th scope="row">Austin</th><td>180.5 cm</td><td>+12.4 cm</td></tr>
+          <tr><td>8</td><th scope="row">Damir</th><td>177 cm</td><td>+8.9 cm</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <aside class="bench" aria-labelledby="bench-title">
+      <h2 id="bench-title">Average Aussie height</h2>
+      <strong id="benchmark">168.1 cm</strong>
+      <p>Australians aged 18 and older.</p>
+      <a href="https://www.abs.gov.au/statistics/health/health-conditions-and-risks/national-health-survey/2022#data-downloads">ABS National Health Survey 2022, Table 8</a>
+    </aside>
+  </section>
+
+  <footer>
+    <p class="source-links">Animal height sources · <a href="https://www.australianwildlife.org/animals/emu">Australian Wildlife Conservancy</a> · <a href="https://parliament.nt.gov.au/about/parliamentary-education-services/education/Red-Kangaroo.pdf">NT Parliament</a> · <a href="https://www.bas.ac.uk/wp-content/uploads/2015/05/Public-information-leaflet_PENGUINS_2017.pdf">British Antarctic Survey</a></p>
+    <p id="load-status" class="load-status" role="status">Checking page content…</p>
+  </footer>
+</main>
+<script>
+window.addEventListener('load', function () {
+  const status = document.getElementById('load-status');
+  const figures = document.querySelectorAll('#team tr').length === 8 &&
+    document.querySelectorAll('.podium li').length === 3 &&
+    document.querySelectorAll('.marks li').length === 8 &&
+    document.querySelectorAll('.animal-notes li').length === 3 &&
+    document.getElementById('benchmark').textContent.trim() === '168.1 cm';
+  const illustrations = Array.from(document.querySelectorAll('.figures img'));
+  const artwork = illustrations.length === 4 && illustrations.every(image => image.naturalWidth > 0);
+  const theme = getComputedStyle(document.documentElement).getPropertyValue('--night').trim().length > 0;
+
+  status.dataset.ready = figures && artwork && theme;
+  status.textContent = figures && artwork && theme
+    ? 'Loaded · Leaderboard, height marks and illustrations'
+    : 'Part of the page failed to load. Reload to try again.';
+});
+</script>
+</body>
+</html>
